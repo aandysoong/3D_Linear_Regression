@@ -98,7 +98,7 @@ for epoch in range(nb_epochs+1):
         print(list(model.parameters()))
 ```
 
-### Graphing
+### 3. Graphing
 Now that training is over, we can use the obtained w1, w2, and b values to plot the graph and points. Before that, if you want to get a prediction about a certain value(s) of x, you can do this:
 
 ```python
@@ -182,7 +182,7 @@ plt.show()
 ```
 These codes are for labeling and showing the graph.
 
-### Final results (graphs)
+### 4. Final results (graphs)
 The graph we receive looks like:
 
 ![valence,energy,pop](https://user-images.githubusercontent.com/70020467/131492440-16dc5434-e129-43e4-8bde-f3705e9849b4.jpg)
