@@ -68,18 +68,14 @@ for epoch in range(nb_epochs+1):
 
 new_var =  torch.FloatTensor([[80,75]]) 
 pred_y = model(new_var) 
-print("predicted value for __ :", pred_y) 
+print("predicted value for [80,75] :", pred_y) 
 
 # data for plotting
-y_plot_list=[]
 w1_final = float(list(model.parameters())[0].data.numpy()[0][0])
 w2_final = float(list(model.parameters())[0].data.numpy()[0][1])
 b_final = float(list(model.parameters())[1].data.numpy()[0])
 
-print(w1_final)
-print(w2_final)
-print(b_final)
-
+y_plot_list=[]
 for i in x_train:
     y_plot_list.append(model(i))
 
