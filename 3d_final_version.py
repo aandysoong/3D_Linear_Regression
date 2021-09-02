@@ -1,8 +1,3 @@
-'''
-JUST NEW DATASET
-MUSIC 
-HOW DOES VALENCE AND ENERGY AFFECT POPULARITY?
-'''
 import torch
 import pandas as pd
 import numpy as np
@@ -49,7 +44,7 @@ optimizer = torch.optim.SGD(model.parameters(), lr=0.00001)
 nb_epochs = 100000
 for epoch in range(nb_epochs+1):
 
-    # H(x) 계산
+    # H(x)
     prediction = model(x_train)
 
     # finding the cost
